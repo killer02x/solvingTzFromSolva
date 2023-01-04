@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kz.tzproject.Tz.solva.TzSolvaApplicationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-01-04T09:42:24" hostname="DESKTOP-1535TQT" time="0.922">
+  <properties/>
+  <testcase name="testGetExchangeRate()" classname="kz.tzproject.Tz.solva.TzSolvaApplicationTests" time="0.915"/>
+  <testcase name="contextLoads()" classname="kz.tzproject.Tz.solva.TzSolvaApplicationTests" time="0.006"/>
+  <system-out><![CDATA[15:42:20.292 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [TzSolvaApplicationTests]: using SpringBootContextLoader
+15:42:20.298 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [kz.tzproject.Tz.solva.TzSolvaApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:42:20.299 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [kz.tzproject.Tz.solva.TzSolvaApplicationTests]: TzSolvaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:42:20.326 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [TzSolvaApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+15:42:20.396 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\Azamat\IdeaProjects\Tz-solva\build\classes\java\main\kz\tzproject\Tz\solva\TzSolvaApplication.class]
+15:42:20.399 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration kz.tzproject.Tz.solva.TzSolvaApplication for test class kz.tzproject.Tz.solva.TzSolvaApplicationTests
+15:42:20.525 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [TzSolvaApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+15:42:20.527 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [TzSolvaApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.1)
+
+2023-01-04T15:42:20.806+06:00  WARN 25868 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Azamat/.gradle/caches/modules-2/files-2.1/org.json/json/20220320/6df2c050972619466f6dcef7654ef9bcc01dfd0/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Azamat/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-01-04T15:42:20.822+06:00  INFO 25868 --- [    Test worker] k.t.Tz.solva.TzSolvaApplicationTests     : Starting TzSolvaApplicationTests using Java 17.0.2 with PID 25868 (started by Azamat in C:\Users\Azamat\IdeaProjects\Tz-solva)
+2023-01-04T15:42:20.823+06:00  INFO 25868 --- [    Test worker] k.t.Tz.solva.TzSolvaApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2023-01-04T15:42:21.539+06:00  INFO 25868 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04T15:42:21.541+06:00  INFO 25868 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-01-04T15:42:21.579+06:00  INFO 25868 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface kz.tzproject.Tz.solva.repository.ExchangeRateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-01-04T15:42:21.582+06:00  INFO 25868 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface kz.tzproject.Tz.solva.repository.LimitRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-01-04T15:42:21.584+06:00  INFO 25868 --- [    Test worker] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface kz.tzproject.Tz.solva.repository.OperationRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-01-04T15:42:21.585+06:00  INFO 25868 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 0 JDBC repository interfaces.
+2023-01-04T15:42:21.598+06:00  INFO 25868 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-04T15:42:21.600+06:00  INFO 25868 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-04T15:42:21.635+06:00  INFO 25868 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2023-01-04T15:42:22.077+06:00  INFO 25868 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-04T15:42:22.131+06:00  INFO 25868 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-04T15:42:22.303+06:00  WARN 25868 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-04T15:42:22.435+06:00  INFO 25868 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-04T15:42:22.556+06:00  INFO 25868 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@14d1737a
+2023-01-04T15:42:22.558+06:00  INFO 25868 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-04T15:42:22.603+06:00  INFO 25868 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-01-04T15:42:23.379+06:00  INFO 25868 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-04T15:42:23.387+06:00  INFO 25868 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-04T15:42:24.040+06:00  WARN 25868 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-04T15:42:24.456+06:00  INFO 25868 --- [    Test worker] k.t.Tz.solva.TzSolvaApplicationTests     : Started TzSolvaApplicationTests in 3.879 seconds (process running for 5.144)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
